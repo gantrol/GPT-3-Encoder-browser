@@ -1,12 +1,7 @@
 // This file includes code which was modified from https://github.com/openai/gpt-2
 const encoder = require('./encoder.json');
 const bpe_file = require('./vocab');
-// for jest : https://stackoverflow.com/a/73901870
-const TextEncoder = require('util').TextEncoder;
-global.TextEncoder = TextEncoder;
 
-const TextDecoder = require('util').TextEncoder;
-global.TextDecoder = TextDecoder;
 const range = (x, y) => {
   const res = Array.from(Array(y).keys()).slice(x)
   return res
